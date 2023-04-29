@@ -34,7 +34,7 @@ window.addEventListener("keypress", (event) => {
             localStorage.setItem("password1", password1.value)
             info.style = "color: green;"
             info.innerHTML = "Registered Successfully"
-            window.location.assign("/main.html") 
+            window.location.assign("main.html") 
         }
 
     }
