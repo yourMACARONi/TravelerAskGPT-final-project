@@ -89,19 +89,19 @@
 
             <div class="input-box">
               <span class="icon"><i class="bx bx-rename"></i></span>
-              <input type="text" required />
+              <input type="text" required id="text" />
               <label>Full Name</label>
             </div>
 
             <div class="input-box">
               <span class="icon"><i class="bx bx-user-circle"></i></span>
-              <input type="username" required />
+              <input type="username1" required id="username1" />
               <label>Username</label>
             </div>
 
             <div class="input-box">
               <span class="icon"><i class="bx bxs-lock"></i></span>
-              <input type="password" required />
+              <input type="password1" required id="password1"/>
               <label>Password</label>
             </div>
 
@@ -111,7 +111,8 @@
               >
             </div>
 
-            <button type="submit" class="btn">Sign Up</button>
+            <button type="reset" class="btn" id="signup" onclick="Signup()">Sign Up</button>
+            <p id="info"></p>
 
             <div class="login-register">
               <p>
@@ -126,5 +127,6 @@
     </div>
     <script src="script.js"></script>
     <script src="userlog.js"></script>
+    <script src="register.js"></script>
   </body>
 </html>
