@@ -30,5 +30,6 @@ function Signup() {
         localStorage.setItem("username1", username1.value)
         localStorage.setItem("password1", password1.value)
         alert("Registered Successfully")
+        window.location.href = 'main.html'
     }
 }
