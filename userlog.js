@@ -3,10 +3,10 @@ let password = document.getElementById("password")
 
 
 function Login() {
-    if (username.value == localStorage.getItem("username1") && password.value == localStorage.getItem("password1")) {
-        alert("Logged In Successfully")
-        location.href = 'index.html'
-    } 
+    if (username.value == '' && password.value == '') {
+        alert("Input Username and Password!")
+    }
+     
 
     else if (username.value == '') {
         alert("Username Required")
@@ -15,6 +15,11 @@ function Login() {
     else if (password.value == '') {
         alert("Password Required")
     }
+
+    else if (username.value == localStorage.getItem("username1") && password.value == localStorage.getItem("password1")) {
+        alert("Logged In Successfully")
+        location.href = 'index.html'
+    } 
 
     else {
         alert("Input Username and Password!")
