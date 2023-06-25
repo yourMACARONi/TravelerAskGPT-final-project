@@ -92,6 +92,10 @@
 
 }
 
+.cleric img{
+    transition: 0.5s;
+}
+
 .container .btn {
     width: 400px;
     height: 40px;
