@@ -24,7 +24,7 @@
 }
 
 .btn {
-  width: 240px;
+  width: 200px;
   height: 50px;
   margin-right: 40px;
   text-align: center;
@@ -55,7 +55,7 @@
 .dropdown {
   float: left;
   overflow: hidden;
-  margin-right: 20px;
+  margin-right: 60px;
 }
 
 /* Dropdown button */
@@ -74,7 +74,7 @@
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  width: 240px;
+  width: 200px;
   display: none;
   position: absolute;
   background-color: (0, 0, 0, 0.575);
@@ -123,26 +123,28 @@
  /* The sidebar menu */
  .sidebar {
     height: 100%;
-    width: 0;
+    display: none;
+    width: 1700px;
     position: fixed;
     z-index: 1; 
     top: 0;
     left: 0;
-    background-color: #ffffff;
     overflow-x: hidden;
-    padding-top: 60px;
     transition: 0.5s; 
-    border: solid red;
+    /* border: solid red; */
   }
 
   /* sidebar content */
   .sidebar .gptainer {
     width: 800px;
-    height: 300px;
+    height: 500px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
-    margin: auto;
+    margin-top: 100px;
     padding: 10px;
     border-radius: 10px;
+    background-color: white;
+    /* backdrop-filter: blur(3px); */
+    border: solid red;
   }
 
   .gptainer {
@@ -163,14 +165,24 @@
   .sidebar a:hover {
     color: #f1f1f1;
   }
+
+  .sidebar .conBG {
+    width: auto;
+    height: 955px;
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    border: solid rgba(37, 37, 37, 0.797);
+  }
+
   
   /* Position and style the close button (top right corner) */
   .sidebar .closebtn {
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 60px;
   }
   
   /* The button used to open the sidebar */
@@ -199,15 +211,6 @@
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   } 
-
-  .social-icons {
-    margin-top: 210px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    font-size: 70px;
-}
-
 .message-box {
   display: flex;
   justify-content: center;
@@ -223,16 +226,17 @@
   border-radius: 5px;
   border-style: none;
   padding: 10px;
-  width: 700px;
+  width: 800px;
 }
 
-.btn-login {
+.btn-send {
+  cursor: pointer;
   background-color: #0A6EBD;
   border-radius: 5px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
 }
 
-.btn-login:hover {
+.btn-send:hover {
   background-color: #5A96E3;
   transition: .5s;
 }
@@ -246,6 +250,9 @@
 
 .wait {
   display: none;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .message {
@@ -261,6 +268,7 @@
   margin-right: 10px;
   transition-duration: 1s;
 }
+
 
 
 .avatar-img {
@@ -307,4 +315,31 @@
   border-style: none;
   cursor: pointer;
   width: 100px;
+}
+
+/* That welcome message */
+.WCmessage {
+  width: auto;
+  margin-top: 147px;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+
+.WCmessage h1, h3 {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.716);
+  
+}
+
+
+.WCmessage p {
+  color: red;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  
+}
+
+.WCmessage h1, h3, p {
+margin-left: 10px;
+  
 }
